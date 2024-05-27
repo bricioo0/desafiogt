@@ -10,6 +10,10 @@ body{
     background-position: center; 
     background-repeat: no-repeat; 
 }
+a{
+    text-decoration: none;
+    color: aliceblue;
+}
 .container{
     flex-direction: column;
     text-align: center;
