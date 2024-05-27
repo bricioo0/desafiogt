@@ -10,15 +10,30 @@ body{
     background-position: center; 
     background-repeat: no-repeat; 
 }
-
+.container{
+    flex-direction: column;
+    text-align: center;
+    margin-top: 20vh; 
+}
 .titulo{
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    font-size: 4rem;
+    font-size: 3rem;
     margin-bottom: 2rem;
-    border: 6px solid aquamarine;
-    background-color: aqua;
+    padding: 20px 40px;
+    color: aliceblue;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    background-color: #007bff;
     border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
 }
+
+.titulo:hover {
+    background-color: #171b0f;
+    transform: translateY(-3px);
+    box-shadow: 0 8px 12px aliceblue
+}
+
 
 
 .buttons {
