@@ -5,6 +5,10 @@ body{
     justify-content: center;
     align-items: center;
     height: 100vh;
+    background-image: url('images/fondo-futbol'); 
+    background-size: cover; 
+    background-position: center; 
+    background-repeat: no-repeat; 
 }
 
 .titulo{
@@ -53,6 +57,4 @@ body{
     transform: translateY(-3px);
 }
 
-.buttons:active {
-    transform: translateY(-1px);
-}
+
