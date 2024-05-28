@@ -73,4 +73,24 @@ body{
     transform: translateY(-3px);
 }
 
+#titulo1{
+    font-size: 2rem;
+  
+
+}
+
+
+.header{
+    padding: 20px;
+    text-align: center;
+    align-items: center;
+    position: fixed; 
+    width: 90%; 
+    top: 0;
+    padding: 20px 0;
+   
+
+}
+
+
 
