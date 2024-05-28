@@ -1,6 +1,7 @@
 body{
     margin: 0;
     padding: 0;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -75,9 +76,18 @@ body{
 
 #titulo1{
     font-size: 2rem;
+   background-color: #333333;
+
   
 
 }
+#titulo1:hover{
+    background-color: #94d11b;
+    transform: translateY(-3px);
+    box-shadow: 0 8px 12px #0056b3;
+  }
+
+
 
 
 .header{
@@ -92,5 +102,56 @@ body{
 
 }
 
+h3{
+
+    color: white;
+    border: 3px solid #004d40;
+    background-color: #004d40;
+    border-radius: 10px;
+    padding: 15px 20px;
+}
+
+
+
+
+
+.imag {
+    display: flex;
+    gap: 20px; /* Espacio entre las imágenes */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.image-box {
+    text-align: center;
+    background-color: #fff;
+    padding: 10px;
+    border: 1px solid #ddd;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+}
+
+.image-box img {
+    max-width: 100%; /* Asegura que las imágenes no sean más anchas que su contenedor */
+    height: auto;
+    border-radius: 4px;
+}
+
+.image-box button {
+    margin-top: 10px;
+    padding: 10px 20px;
+    background-color: #0056b3;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.image-box button:hover {
+    background-color: #003d80;
+}
 
 
