@@ -82,6 +82,7 @@ body{
 #titulo1{
     font-size: 2rem;
    background-color: #333333;
+   padding: 20px 40px;
 
   
 
@@ -99,7 +100,6 @@ body{
     padding: 20px;
     text-align: center;
     align-items: center;
-    
     width: 90%; 
     top: 0;
     left: 0;
@@ -122,10 +122,10 @@ h3{
 
 
 .img {
-  display: grid;
-   grid-template-columns: 1fr 1fr;
-   gap:20px ;
-   padding-bottom: 30px ;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap:20px ;
+    padding-bottom: 30px ;
 }
 
 .image-box {
@@ -170,7 +170,8 @@ h3{
 }
 
 .image-box {
-    
+    width: 50%;
+    height: auto;
     text-align: center;
     align-items: center;
     background-color: #333333;
