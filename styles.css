@@ -2,20 +2,25 @@ body{
     margin: 0;
     padding: 0;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    display: flex;
+    text-align: center;
     justify-content: center;
-    align-items: center;
-    height: 100vh;
+   
+    height: auto;
+    
     background-image: url('images/Descargar\ Cancha\ de\ futbol\ con\ estadio\ 001_\ gratis.jpg'); 
     background-size: cover; 
     background-position: center; 
     background-repeat: no-repeat; 
 }
 
+
 .container{
+    
+    display: flex;
     flex-direction: column;
+    align-items: center;
     text-align: center;
-    margin-top: 20vh; 
+    margin-top: 20vh;
 }
 .titulo{
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
@@ -90,20 +95,21 @@ body{
 
 
 
-.header{
+  .header{
     padding: 20px;
     text-align: center;
     align-items: center;
-    position: fixed; 
+    
     width: 90%; 
     top: 0;
+    left: 0;
     padding: 20px 0;
    
 
 }
 
 h3{
-
+      
     color: white;
     border: 3px solid #004d40;
     background-color: #004d40;
@@ -115,13 +121,52 @@ h3{
 
 
 
-.imag {
-    display: flex;
-    gap: 20px; /* Espacio entre las imágenes */
+.img {
+  display: grid;
+   grid-template-columns: 1fr 1fr;
+   gap:20px ;
+   padding-bottom: 30px ;
+}
+
+.image-box {
+    text-align: center;
+
+}
+
+.image-box img {
+    width: 100%; /* Asegura que las imágenes ocupen el ancho del contenedor */
+    height: auto;
+    max-width: 200px; /* Tamaño máximo de las imágenes */
+    border-radius: 4px;
+}
+
+
+.image-box button {
+    margin-top: 10px;
+    padding: 10px 20px;
+    background-color: #0056b3;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.image-box button:hover {
+    background-color: #003d80;
+}
+
+
+.image-container {
     display: flex;
     justify-content: center;
-    align-items: center;
-    height: 100vh;
+    text-align: center;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+
+    grid-gap: 20px; 
+    width: 80%; 
+    max-width: 800px; 
 }
 
 .image-box {
@@ -134,8 +179,9 @@ h3{
 }
 
 .image-box img {
-    max-width: 100%; /* Asegura que las imágenes no sean más anchas que su contenedor */
+    width: 100%; /* Asegura que las imágenes ocupen el ancho del contenedor */
     height: auto;
+    max-width: 200px; /* Tamaño máximo de las imágenes */
     border-radius: 4px;
 }
 
