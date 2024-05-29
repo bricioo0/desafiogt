@@ -170,8 +170,10 @@ h3{
 }
 
 .image-box {
+    
     text-align: center;
-    background-color: #fff;
+    align-items: center;
+    background-color: #333333;
     padding: 10px;
     border: 1px solid #ddd;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
@@ -183,6 +185,7 @@ h3{
     height: auto;
     max-width: 200px; /* Tamaño máximo de las imágenes */
     border-radius: 4px;
+    box-shadow: 0 2px 4px rgba(151, 143, 143, 0.055);
 }
 
 .image-box button {
