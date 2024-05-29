@@ -91,6 +91,11 @@ body{
     transform: translateY(-3px);
     box-shadow: 0 8px 12px #0056b3;
   }
+  button:active {
+    transform: scale(1.05) rotate(0deg); 
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2); 
+    filter: brightness(0.9); 
+}
 
 
 
@@ -119,6 +124,20 @@ h3{
 
 
 
+img{
+    border: 5px solid; /* Borde color aguamarina */
+            border-radius: 20px; /* Bordes redondeados */
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3); /* Sombra */
+            transition: transform 0.4s ease, box-shadow 0.4s ease, filter 0.4s ease; /* Transiciones para el hover */
+            max-width: 90%; /* Para que la imagen no exceda el ancho del contenedor */
+            cursor: pointer; /* Cursor pointer al pasar sobre la imagen */
+}
+
+img:hover {
+    transform: scale(1.1) rotate(3deg); 
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.4); 
+    filter: brightness(1.1); 
+}
 
 .img {
     display: grid;
@@ -141,18 +160,26 @@ h3{
 
 
 .image-box button {
-    margin-top: 10px;
-    padding: 10px 20px;
-    background-color: #0056b3;
-    color: #fff;
-    border: none;
-    border-radius: 4px;
-    cursor: pointer;
-    font-size: 16px;
+    background: linear-gradient(45deg, #00c6ff, #0072ff); 
+            border: none; 
+            border-radius: 30px;
+            padding: 15px 30px; 
+            letter-spacing: 2px; 
+            cursor: pointer; 
+            box-shadow: 0 10px 20px rgb(21, 79, 237);
+            transition: transform 0.3s ease, box-shadow 0.3s ease, background 0.3s ease; 
+            position: relative; 
+            overflow: hidden; /
 }
 
 .image-box button:hover {
-    background-color: #003d80;
+    transform: scale(1.1); 
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.4); 
+    background: linear-gradient(45deg, #ff4b2b, #ff416c); 
+}
+.image-box button:active {
+    transform: scale(1.05); 
+    box-shadow: 0 5px 10px rgba(250, 245, 245, 0.2); /* Reduce la sombra */
 }
 
 
@@ -277,6 +304,6 @@ h3{
     }
 
 
-    
+
 
 
