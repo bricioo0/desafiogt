@@ -310,6 +310,13 @@ img:hover {
     box-shadow: 0 8px 12px yellow;
 
     }
+   .indest:hover{
+    color: black;
+    background-color: red;
+    transform: translateY(-3px);
+    box-shadow: 0 8px 12px aliceblue;
+
+   }
 
 
 
