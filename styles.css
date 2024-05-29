@@ -111,7 +111,7 @@ body{
 h3{
       
     color: white;
-    border: 3px solid #004d40;
+    border: 1px solid #004d40;
     background-color: #004d40;
     border-radius: 10px;
     padding: 15px 20px;
@@ -199,5 +199,60 @@ h3{
 .image-box button:hover {
     background-color: #003d80;
 }
+
+#amarillo:hover{
+    background-color:  yellow;
+    transform: translateY(-3px);
+    box-shadow: 0 8px 12px #1336e4 
+
+    
+}
+#azul:hover{
+    background-color: #1336e4;
+    transform: translateY(-3px);
+    box-shadow: 0 8px 12px yellow
+    }
+
+
+
+    #boca {
+        background: linear-gradient(90deg, rgba(58,123,213,1) 0%, rgba(0,210,255,1) 100%);
+        border: none;
+        border-radius: 50px;
+        box-shadow: 0 8px 15px rgba(0, 0, 0, 0.1);
+        color: white;
+        cursor: pointer;
+        font-size: 18px;
+        padding: 15px 30px;
+        text-align: center;
+        text-decoration: none;
+        transition: all 0.3s ease;
+        position: relative;
+        overflow: hidden;
+    }
+    
+    #boca:hover::before {
+        top: 0;
+    }
+
+  
+    #boca::before{
+        content: '';
+        background: linear-gradient(90deg, rgba(255, 255, 0, 0.8) 0%, rgba(0, 0, 255, 0.8) 100%),
+        linear-gradient(90deg, rgba(58,123,213,1) 0%, rgba(0,210,255,1) 100%);
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        top: -100%;
+        left: 0;
+        transition: all 0.3s ease;
+        
+    }
+    #boca:hover {
+        box-shadow: 0 15px 20px rgba(0, 0, 0, 0.2);
+        transform: translateY(-3px);
+    }
+
+    
 
 
